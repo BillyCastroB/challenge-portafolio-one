@@ -1,0 +1,227 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #EDEDED;
+    font-size: var(--fuentePrincipal);  
+}
+
+/* globales */
+
+h1,h2,h3,h4{
+    font-weight: 900;
+}
+h1{
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.6rem;
+    text-align: center;
+}
+h3{
+    font-size: 2.8rem;
+}
+p{
+    font-size: 2rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    margin: 0 15px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container-mid{
+    width: 65%;
+    padding: 20px 0;
+}
+.container-mid p{
+    margin: 0 0 10px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.titulo{
+    margin: 0;
+}
+.contenedor-navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav a{
+    font-size: 18px;
+}
+.informacion{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 15px;
+}
+.formacion{
+    text-align: justify;
+}
+@media(width<400px){
+    .informacion{
+        display: block;
+    }
+}
+.info-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info-principal p{
+    margin: 0 0 10px 0;
+}
+.enlaces-externos a{
+    font-size: 15px;
+    margin: 0 20px 0 0;
+}
+.perfil-img{
+    width: 60%;
+    z-index: -1;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+/*  */
+.presentacion{
+    background-color: #EAF2FD;
+}
+
+/* grid skills */
+.grid-skills{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+}
+.grid-skills div{
+    background-color: white;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+@media(width<768px){
+    .grid-skills{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+}
+@media(width<400px){
+    .grid-skills{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+    .grid-hobbies{
+        display: block;
+    }
+}
+
+/* grid skills */
+.grid-hobbies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+}
+@media(width<400px){
+    .grid-hobbies{
+        display: block;
+    }
+    .grid-hobbies div{
+        margin-bottom: 10px;
+    }
+    .grid-formacion{
+        display: block;
+    }
+}
+.grid-hobbies div{
+    background-color: white;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* formacion */
+.grid-formacion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+@media(width<400px){
+    .grid-formacion{
+        display: block;
+    }
+}
+.formacion-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+/* foramcion profesional */
+.proyecto{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 40px 0;
+}
+.proyecto-reverse{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+@media(width<400px){
+    .proyecto{
+        display: block;
+    }
+    .proyecto-reverse{
+        display: block;
+    }
+}
+
+.proyecto-img{
+    width: 750px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+
+
+/* contacto */
+.contacto{
+    display: flex;
+}
+.contacto div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-img{
+    width: 400px;
+}
+input{
+    width: 350px;
+    height: 25px;
+}
+/* footer */
+footer{
+    text-align: center;
+}
